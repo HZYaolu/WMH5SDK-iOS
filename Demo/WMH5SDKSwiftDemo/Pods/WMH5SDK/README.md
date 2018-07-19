@@ -45,7 +45,7 @@ SDK需要接入方提供的**参数**
 ### 初始化
 - **初始化**控制器
 
-```objective-c
+```objc
 /**
  @param url H5入口
  @param appChannel 合作方唯一标识
@@ -57,19 +57,19 @@ WMH5ViewController *h5Controller = [WMH5ViewController h5ControllerWithUrl:url a
 
 - **设置**代理
 
-```objective-c
+```objc
 h5Controller.delegate = self;
 ```
 
 - **展示**页面
 
-```objective-c
+```objc
 [self.navigationController pushViewController:h5Controller animated:YES];
 ```
 
 - 代理需要实现`获取SDKAuth`、`退出sdk页面`的方法
 
-```objective-c
+```objc
 /**
  获取sdkAuth
 
@@ -99,7 +99,7 @@ h5Controller.delegate = self;
 ###  **自定义**行为
 - `Native`与`H5`交互
 
-```objective-c
+```objc
 /**
  Native注册JS调用的方法
  
@@ -125,13 +125,13 @@ h5Controller.delegate = self;
 
 - `改变`WebView行为
 
-```objective-c
+```objc
 [h5Controller setWebViewDelegate:webViewDelegeta];
 ```
 
 - 关于`进度条`
 
-```objective-c
+```objc
 /*显示-隐藏*/
 h5Controller.pregressViewHidden = NO;
 /*进度条颜色*/
@@ -143,7 +143,7 @@ h5Controller.progressViewColor = [UIColor yellowColor];
 - 关于`界面`
 可以自定义界面位置大小，将sdk提供的`ViewController`作为`子控制器`布局，必须将`isCustomUI`先置YES。
 
-```objective-c
+```objc
 /*必须要设置*/
 h5Controller.isCustomUI = YES;
 ```
