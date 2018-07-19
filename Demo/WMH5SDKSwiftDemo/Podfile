@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://g.hz.netease.com/WM-iOS/Specs.git'
+
+platform :ios, "9.0"
+inhibit_all_warnings!
+
+
+target "WMH5SDKSwiftDemo" do
+
+pod 'WMH5SDK', '~> 1.0.0'
+
+end
+
+
