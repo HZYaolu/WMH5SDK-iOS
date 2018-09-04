@@ -46,7 +46,7 @@
     
     
     
-    self.dataSource = @[@[@"测试服务器—登录", @"测试服务器—未登录", @"正式服务器—登录"], @[@"测试服务器—登录", @"测试服务器—未登录"]];
+    self.dataSource = @[@[@"测试服务器—登录", @"测试服务器—未登录", @"正式服务器—未登录"], @[@"测试服务器—登录", @"测试服务器—未登录"]];
     [self.tableView reloadData];
 }
 
@@ -90,6 +90,7 @@
         appChannel = self.appChannel;
         callBackURLScheme = self.urlScheme;
         currentSdkAuth = self.sdkAuth;
+        self.currentSdkAuth = self.sdkAuth;
        if (indexPath.row == 1) {
             //未登录
             currentSdkAuth = nil;
@@ -97,19 +98,20 @@
         else if (indexPath.row == 2) {
             //正式地址
             url = self.formalUrl;
+            currentSdkAuth = nil;
+            self.currentSdkAuth = nil; //正式环境需要自己赋值
         }
-        self.currentSdkAuth = self.sdkAuth;
     }
     else {
         url = self.mhUrl;
         appChannel = self.mhAppChannel;
         callBackURLScheme = self.mhUrlSchemem;
         currentSdkAuth = self.mhSdkAuth;
+        self.currentSdkAuth = self.mhSdkAuth;
         if (indexPath.row == 1) {
             //未登录
             currentSdkAuth = nil;
         }
-        self.currentSdkAuth = self.mhSdkAuth;
     }
     WMH5ViewController *h5Controller = [WMH5ViewController h5ControllerWithUrl:url appChannel:appChannel sdkAuth:currentSdkAuth callBackURLScheme:callBackURLScheme];
     h5Controller.delegate = self;
