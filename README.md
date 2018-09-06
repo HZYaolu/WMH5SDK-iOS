@@ -1,4 +1,4 @@
-# 文漫H5 iOS SDK使用说明
+# 《网易文漫内容合作 - iOS开发指南》
 
 ## 概述
 网易文漫H5 iOS SDK可以帮助合作方iOS客户端快速接入网易文漫提供的功能丰富的H5应用，具体提供如下支持：
@@ -20,7 +20,9 @@
 - **libsqlite3.dylib** - sqlite 支持
 - **libz.dylib** - gzip 压缩支持
 
-**Pod**
+**GitHub**
+
+[地址](https://github.com/WYWM/WMH5SDK-iOS)
 
 ```ruby
 pod 'WMH5SDK', '~> 1.0.0'
