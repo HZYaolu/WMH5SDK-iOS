@@ -29,6 +29,15 @@ typedef void (^WMH5Handler)(id data, WMH5ResponseCallback responseCallback);
 
 @protocol WMH5ViewControllerDelegate <NSObject>
 
+@optional
+/**
+ H5页面登录成功后，返回auth的窗口
+
+ @param h5Controller H5控制器实例
+ @param auth 通行凭证
+ */
+- (void)h5Controller:(WMH5ViewController *)h5Controller authForLoginSuccess:(NSString *)auth;
+
 @required
 
 /**
