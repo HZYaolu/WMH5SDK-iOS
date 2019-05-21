@@ -12,20 +12,13 @@
 ## 导入
 依赖的**环境**
 - iOS **8+**
-- **AdSupport.framework** - 启用 Apple ADID 支持
-- **CoreTelephony.framework** - 获取运营商
-- **Security.framework** - 加密支持
-- **CoreLocation.framework** - 获取定位信息的支持
-- **SystemConfiguration.framework** - 获取联网方式(wifi, cellular)
-- **libsqlite3.dylib** - sqlite 支持
-- **libz.dylib** - gzip 压缩支持
 
 **GitHub**
 
 [地址](https://github.com/WYWM/WMH5SDK-iOS)
 
 ```ruby
-pod 'WMH5SDK', '~> 1.0.0'
+pod 'WMH5SDK', '~> 1.1.0'
 ```
 
 SDK需要接入方提供的**参数**
