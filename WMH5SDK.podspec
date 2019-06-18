@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WMH5SDK"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "Wenman H5 Native SDK"
   s.description  = "A SDK for fast access to Wenman H5 application, The default navigation bar and progress bar are provided, Provide scheme for payment completion return APP."
 

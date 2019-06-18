@@ -18,7 +18,7 @@
 [地址](https://github.com/WYWM/WMH5SDK-iOS)
 
 ```ruby
-pod 'WMH5SDK', '~> 1.1.0'
+pod 'WMH5SDK', '~> 1.2.0'
 ```
 
 SDK需要接入方提供的**参数**
@@ -148,7 +148,7 @@ h5Controller.isCustomUI = YES;
 - 增加微信与支付宝的Scheme
 1. `Info.Plist`中找到`LSApplicationQueriesSchemes`项
 2. 增加`weixin`
-3. 增加`alipay`
+3. 增加`alipay`（可以不添加）
 ![Info.Plist](https://upload-images.jianshu.io/upload_images/1776603-971df71b0c7ce064.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 支付完成，回跳APP的`Scheme`
